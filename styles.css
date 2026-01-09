@@ -1,0 +1,40 @@
+:root {
+    --bg-color: #4b3a29;
+    --main-color: ;
+    --text-color: ;
+    --second-text-color: ;
+    --white-color: #ffffff;
+    --cover-color: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    --pages-color: linear-gradient(90deg, #C4A484, #A67C52);
+    --border: .125rem solid #000000;
+    --box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.5);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: var(--bg-color);
+}
+
+.wrapper {
+    position: relative;
+    width: 60rem;
+    height: 40.5rem;
+    
+}
+
+.cover {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: var(--cover-color);
+    box-shadow: var(--box-shadow);
+    border-top-left-radius: .6rem;
+    border-bottom-left-radius: .6rem;
+    transform-origin: right;
+}
+.cover.cover-right.turn{
+    transform: rotateY(180deg);
+}
